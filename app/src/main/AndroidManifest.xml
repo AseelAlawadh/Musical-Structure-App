@@ -16,22 +16,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".AdeleActivity"
             android:label="@string/category_adele" />
-
         <activity
             android:name=".LadyGagaActivity"
             android:label="@string/category_ladyGaga" />
-
         <activity
             android:name=".SelenaActivity"
             android:label="@string/category_selena" />
-
         <activity
             android:name=".ArianaActivity"
             android:label="@string/category_ariana" />
+        <activity android:name=".MusicActivity" />
+        <activity android:name=".ArtistActivity"/>
 
     </application>
 

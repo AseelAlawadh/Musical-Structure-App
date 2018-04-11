@@ -21,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
             adele.setOnClickListener(new OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent adeleIntent = new Intent(MainActivity.this , AdeleActivity.class);
-                    startActivity(adeleIntent);
+                    Intent intent = new Intent(MainActivity.this , ArtistActivity.class);
+                    startActivity(intent);
 
                 }
             });
