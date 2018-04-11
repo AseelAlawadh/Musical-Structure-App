@@ -21,7 +21,7 @@ public class ArtistActivity extends AppCompatActivity {
 
 
         ArrayList<String> adeleSongs = new ArrayList<>();
-        adeleSongs.add("Song");
+//        adeleSongs.add("Song");
         adeleSongs.add("Hello");
         adeleSongs.add("Send My Love (To Your New Lover)");
         adeleSongs.add("I Miss you ");
@@ -34,15 +34,68 @@ public class ArtistActivity extends AppCompatActivity {
         adeleSongs.add("All I Ask");
         adeleSongs.add("Sweetest Devotion");
         Artist adele = new Artist("Adele" , adeleSongs);
+        artists.add(adele);
 
 
         ArrayList<String> ladySongs = new ArrayList<>();
-        ladySongs.add("Song");
-        ladySongs.add("Hello");
+        ladySongs.add("Just Dance");
+        ladySongs.add("LoveGame");
+        ladySongs.add("Paparazzi");
+        ladySongs.add("Poker Face");
+        ladySongs.add("Eh, Eh (Nothing Else I Can Say");
+        ladySongs.add("Beautiful, Dirty, Rich ");
+        ladySongs.add("The Fame");
+        ladySongs.add("Money Honey");
+        ladySongs.add("Starstruck");
+        ladySongs.add("Boys Boys Boys");
+        ladySongs.add("Paper Gangsta");
+        ladySongs.add("Brown Eyes");
+        ladySongs.add("I Like It Rough");
+        ladySongs.add("Summerboy");
         Artist ladyGaga = new Artist("Lady Gag" , ladySongs);
-
-        artists.add(adele);
         artists.add(ladyGaga);
+
+        ArrayList<String> selenaSongs = new ArrayList<>();
+        selenaSongs.add("The Heart Wants What It Wants");
+        selenaSongs.add("Come & Get It");
+        selenaSongs.add("Love You Like a Love Song");
+        selenaSongs.add("Tell Me Something I Don't Know");
+        selenaSongs.add("Who Says");
+        selenaSongs.add("My Dilemma 2.0");
+        selenaSongs.add("Round & Round");
+        selenaSongs.add("Forget Forever (Boy Lightning remix");
+        selenaSongs.add("Slow Down");
+        selenaSongs.add("A Year Without Rain (Dave Audé Radio remix");
+        selenaSongs.add("Naturally (Dave Audé Radio Remix");
+        selenaSongs.add("Más (More - Spanish version)");
+        selenaSongs.add("Bidi Bidi Bom Bom");
+        selenaSongs.add("Falling Down");
+        selenaSongs.add("Do It");
+        Artist selena = new Artist("Selena Gomez" , selenaSongs);
+        artists.add(selena);
+
+
+        ArrayList<String> arianaSongs = new ArrayList<>();
+        arianaSongs.add("Break Free");
+        arianaSongs.add("Problem");
+        arianaSongs.add("Baby I");
+        arianaSongs.add("Into You");
+        arianaSongs.add("Bang Bang");
+        arianaSongs.add("Side to Side");
+        arianaSongs.add("One Last Time");
+        arianaSongs.add("The Way");
+        arianaSongs.add("Be Alright");
+        arianaSongs.add("Love Me Harder");
+        arianaSongs.add("Everyday");
+        arianaSongs.add("Right There");
+        arianaSongs.add("Greedy");
+        arianaSongs.add("Piano");
+        arianaSongs.add("Dangerous Woman");
+        arianaSongs.add("Best Mistake");
+        arianaSongs.add("Faith");
+        arianaSongs.add("Beauty and the Beast");
+        Artist ariana = new Artist("Ariana Grande" , arianaSongs);
+        artists.add(ariana);
 
         /*
         for (int i=0; i< 4; i++) {

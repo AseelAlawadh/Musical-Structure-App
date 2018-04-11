@@ -28,8 +28,11 @@
         <activity
             android:name=".ArianaActivity"
             android:label="@string/category_ariana" />
-        <activity android:name=".MusicActivity" />
-        <activity android:name=".ArtistActivity"/>
+        <activity android:name=".MusicActivity"
+            android:label="Artist's Songs"/>
+        <activity android:name=".ArtistActivity"
+            android:label="Music Artist"
+            />
 
     </application>
 

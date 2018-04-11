@@ -17,8 +17,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-            Button adele = (Button) findViewById(R.id.button_adele);
-            adele.setOnClickListener(new OnClickListener() {
+            Button music = (Button) findViewById(R.id.button_music);
+        music.setOnClickListener(new OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     Intent intent = new Intent(MainActivity.this , ArtistActivity.class);
@@ -27,29 +27,9 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
 
-        Button ladyGaga = (Button) findViewById(R.id.button_ladyGaga);
-        ladyGaga.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent ladyGagaIntent = new Intent(MainActivity.this , LadyGagaActivity.class);
-                startActivity(ladyGagaIntent);
 
-            }
-        });
-
-
-        Button selena = (Button) findViewById(R.id.button_selena);
-        selena.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent selenaIntent = new Intent(MainActivity.this , SelenaActivity.class);
-                startActivity(selenaIntent);
-
-            }
-        });
-
-        Button ariana = findViewById(R.id.button_ariana);
-        ariana.setOnClickListener(new OnClickListener() {
+        Button book = findViewById(R.id.button_book);
+        book.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent arianaIntent = new Intent(MainActivity.this , ArianaActivity.class);
