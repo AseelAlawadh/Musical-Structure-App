@@ -5,38 +5,32 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
+
 import java.util.ArrayList;
 
 /**
- * Created by aseelalawadh on 11/04/2018.
+ * Created by aseelalawadh on 12/04/2018.
  */
 
-public class LadyGagaSongAdapter extends ArrayAdapter<LadyGagaSong> {
+public class PodcastAdapter extends ArrayAdapter<String> {
 
-
-    public LadyGagaSongAdapter(LadyGagaActivity context, ArrayList<LadyGagaSong> songs) {
-        super(context, 0, songs);
+    public PodcastAdapter(PodcastActivity context, ArrayList<String> episodes) {
+        super(context, 0, episodes);
     }
-
 
     public View getView(int position, View convertView, ViewGroup parent) {
         View listItemView = convertView;
         if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.list_item, parent, false);
-
         }
 
+        String item = getItem(position);
+        TextView id = listItemView.findViewById(R.id.id_textView);
+        id.setText(String.valueOf(position + 1));
 
-        LadyGagaSong currentSong = getItem(position);
-
-        TextView id = (TextView) listItemView.findViewById(R.id.song_number);
-        id.setText(currentSong.getId());
-
-        TextView songName = (TextView) listItemView.findViewById(R.id.song_name);
-        songName.setText(currentSong.getNameSong());
+        TextView songName = listItemView.findViewById(R.id.title_textView);
+        songName.setText(item);
         return listItemView;
     }
-
-
 }

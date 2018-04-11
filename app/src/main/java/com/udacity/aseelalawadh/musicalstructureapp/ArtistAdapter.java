@@ -25,9 +25,9 @@ public class ArtistAdapter extends ArrayAdapter<Artist> {
         }
 
         Artist item = getItem(position);
-        TextView id = listItemView.findViewById(R.id.song_number);
+        TextView id = listItemView.findViewById(R.id.id_textView);
         id.setText(String.valueOf(position + 1));
-        TextView songName = listItemView.findViewById(R.id.song_name);
+        TextView songName = listItemView.findViewById(R.id.title_textView);
         songName.setText(item.getName());
         return listItemView;
     }

@@ -17,23 +17,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".AdeleActivity"
-            android:label="@string/category_adele" />
+            android:name=".MusicActivity"
+            android:label="Artist&apos;s Songs" />
         <activity
-            android:name=".LadyGagaActivity"
-            android:label="@string/category_ladyGaga" />
-        <activity
-            android:name=".SelenaActivity"
-            android:label="@string/category_selena" />
-        <activity
-            android:name=".ArianaActivity"
-            android:label="@string/category_ariana" />
-        <activity android:name=".MusicActivity"
-            android:label="Artist's Songs"/>
-        <activity android:name=".ArtistActivity"
-            android:label="Music Artist"
-            />
-
+            android:name=".ArtistActivity"
+            android:label="Music Artist" />
+        <activity android:name=".PodcastActivity"
+            android:label="New York public radio"/>
     </application>
 
 </manifest>

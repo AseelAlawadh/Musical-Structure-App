@@ -1,8 +1,8 @@
 package com.udacity.aseelalawadh.musicalstructureapp;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -13,15 +13,14 @@ public class ArtistActivity extends AppCompatActivity {
 
     public ListView listView;
     public ArrayList<Artist> artists = new ArrayList<>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_artist);
 
-
-
+        //Adding First Artist songs
         ArrayList<String> adeleSongs = new ArrayList<>();
-//        adeleSongs.add("Song");
         adeleSongs.add("Hello");
         adeleSongs.add("Send My Love (To Your New Lover)");
         adeleSongs.add("I Miss you ");
@@ -33,10 +32,10 @@ public class ArtistActivity extends AppCompatActivity {
         adeleSongs.add("Million Years Ago");
         adeleSongs.add("All I Ask");
         adeleSongs.add("Sweetest Devotion");
-        Artist adele = new Artist("Adele" , adeleSongs);
+        Artist adele = new Artist("Adele", adeleSongs);
         artists.add(adele);
 
-
+        //Adding second Artist songs
         ArrayList<String> ladySongs = new ArrayList<>();
         ladySongs.add("Just Dance");
         ladySongs.add("LoveGame");
@@ -52,9 +51,10 @@ public class ArtistActivity extends AppCompatActivity {
         ladySongs.add("Brown Eyes");
         ladySongs.add("I Like It Rough");
         ladySongs.add("Summerboy");
-        Artist ladyGaga = new Artist("Lady Gag" , ladySongs);
+        Artist ladyGaga = new Artist("Lady Gag", ladySongs);
         artists.add(ladyGaga);
 
+        //Adding third Artist songs
         ArrayList<String> selenaSongs = new ArrayList<>();
         selenaSongs.add("The Heart Wants What It Wants");
         selenaSongs.add("Come & Get It");
@@ -71,10 +71,10 @@ public class ArtistActivity extends AppCompatActivity {
         selenaSongs.add("Bidi Bidi Bom Bom");
         selenaSongs.add("Falling Down");
         selenaSongs.add("Do It");
-        Artist selena = new Artist("Selena Gomez" , selenaSongs);
+        Artist selena = new Artist("Selena Gomez", selenaSongs);
         artists.add(selena);
 
-
+        //Adding third Artist song
         ArrayList<String> arianaSongs = new ArrayList<>();
         arianaSongs.add("Break Free");
         arianaSongs.add("Problem");
@@ -94,21 +94,8 @@ public class ArtistActivity extends AppCompatActivity {
         arianaSongs.add("Best Mistake");
         arianaSongs.add("Faith");
         arianaSongs.add("Beauty and the Beast");
-        Artist ariana = new Artist("Ariana Grande" , arianaSongs);
+        Artist ariana = new Artist("Ariana Grande", arianaSongs);
         artists.add(ariana);
-
-        /*
-        for (int i=0; i< 4; i++) {
-            ArrayList<String> songs = new ArrayList<>();
-            for (int j=0; j<10; j++) {
-                //Music item = new Music(" name " + i, "details " + i, "Adele");
-                String item = new String("name" + i);
-                songs.add(item);
-            }
-
-            Artist artist = new Artist("Artist" + i, songs);
-            artists.add(artist);
-        }*/
 
 
         ArtistAdapter adapter = new ArtistAdapter(this, artists);
@@ -118,12 +105,11 @@ public class ArtistActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                Intent intent = new Intent(ArtistActivity.this , MusicActivity.class);
+                Intent intent = new Intent(ArtistActivity.this, MusicActivity.class);
                 Artist item = artists.get(position);
                 intent.putExtra("SONGS", item.getSongs());
                 startActivity(intent);
             }
         });
-
     }
 }

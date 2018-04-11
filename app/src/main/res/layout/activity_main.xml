@@ -1,51 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#ccc7b9"
-        tools:context="com.udacity.aseelalawadh.musicalstructureapp.MainActivity">
-
-    <TextView
-        android:id="@+id/albums"
-        style="@style/CategoryStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#b76e79"
-        android:text="@string/albums"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
-
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ccc7b9"
+    tools:context="com.udacity.aseelalawadh.musicalstructureapp.MainActivity">
 
     <Button
         android:id="@+id/button_music"
+        style="@style/TextViewStyle"
         android:layout_width="200dp"
         android:layout_height="100dp"
-        android:layout_below="@+id/albums"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="81dp"
-        android:background="#6eb7ac"
-        android:drawableLeft="@drawable/music"
+        android:background="@color/colorPrimaryDark"
+        android:drawableEnd="@drawable/music"
         android:drawablePadding="30dp"
-        android:drawableStart="@drawable/music"
+        android:drawableRight="@drawable/music"
         android:gravity="center"
-        android:text="Musics" />
-
+        android:text="@string/musics"
+        android:textColor="#ffffff" />
 
     <Button
-        android:id="@+id/button_book"
+        android:id="@+id/button_podcast"
+        style="@style/TextViewStyle"
         android:layout_width="200dp"
         android:layout_height="100dp"
         android:layout_below="@+id/button_music"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="80dp"
-        android:background="#6eb7ac"
-        android:drawableLeft="@drawable/music"
+        android:background="@color/colorPrimaryDark"
+        android:drawableEnd="@drawable/podcast"
         android:drawablePadding="30dp"
-        android:drawableStart="@drawable/music"
-        android:text="Books" />
-
+        android:drawableRight="@drawable/podcast"
+        android:text="@string/podcast"
+        android:textColor="#ffffff" />
 
 </RelativeLayout>

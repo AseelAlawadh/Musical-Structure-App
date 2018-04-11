@@ -6,9 +6,6 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import com.udacity.aseelalawadh.musicalstructureapp.Music;
-import com.udacity.aseelalawadh.musicalstructureapp.MusicActivity;
-
 import java.util.ArrayList;
 
 /**
@@ -30,15 +27,12 @@ public class MusicAdapter extends ArrayAdapter<String> {
 
         String item = getItem(position);
 
-        TextView id = listItemView.findViewById(R.id.song_number);
+        TextView id = listItemView.findViewById(R.id.id_textView);
         id.setText(String.valueOf(position + 1));
 
-        TextView songName = listItemView.findViewById(R.id.song_name);
+        TextView songName = listItemView.findViewById(R.id.title_textView);
         songName.setText(item);
         return listItemView;
     }
-
-
-
 
 }

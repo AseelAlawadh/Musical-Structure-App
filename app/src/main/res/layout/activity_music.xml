@@ -6,6 +6,4 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:paddingHorizontal="15dp"
-    android:paddingVertical="15dp"
-
-    />
+    android:paddingVertical="15dp" />

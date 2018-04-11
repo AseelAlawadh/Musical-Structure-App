@@ -6,7 +6,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class MusicActivity extends AppCompatActivity {
+public class PodcastActivity extends AppCompatActivity {
 
 
     public ListView listView;
@@ -14,15 +14,17 @@ public class MusicActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_music);
+        setContentView(R.layout.activity_podcast);
 
-        Bundle extras = getIntent().getExtras();
-        ArrayList<String> songs = extras.getStringArrayList("SONGS");
+        ArrayList<String> episodes = new ArrayList<>();
+        for (int i = 0; i < 100; i++) {
+            int episode_number = i + 1;
+            String item = new String("Episode :" + episode_number);
+            episodes.add(item);
+        }
 
-        MusicAdapter adapter = new MusicAdapter(this, songs);
+        PodcastAdapter adapter = new PodcastAdapter(this, episodes);
         listView = findViewById(R.id.list_view);
         listView.setAdapter(adapter);
-
     }
-
 }
