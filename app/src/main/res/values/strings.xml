@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Musical Structure App</string>
+    <string name="albums"> Albums </string>
+    <string name="Choice"> Please Choice your Album </string>
+    <string name="albumName_adele"> ADELE 25</string>
+    <string name="albumName_ladyGaga"> The Fame </string>
+    <string name="albumName_selena"> For You </string>
+    <string name="albumName_ariana"> The Best </string>
+
+    <string name="category_adele">Adele Songs</string>
+    <string name="category_ladyGaga">LadyGaga Songs</string>
+    <string name="category_selena">Selena Songs</string>
+    <string name="category_ariana">Ariana Songs</string>
+</resources>
