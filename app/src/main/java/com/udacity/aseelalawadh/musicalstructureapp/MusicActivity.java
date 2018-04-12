@@ -17,7 +17,7 @@ public class MusicActivity extends AppCompatActivity {
         setContentView(R.layout.activity_music);
 
         Bundle extras = getIntent().getExtras();
-        ArrayList<String> songs = extras.getStringArrayList("SONGS");
+        ArrayList<Song> songs = extras.getParcelableArrayList("SONGS");
 
         MusicAdapter adapter = new MusicAdapter(this, songs);
         listView = findViewById(R.id.list_view);
