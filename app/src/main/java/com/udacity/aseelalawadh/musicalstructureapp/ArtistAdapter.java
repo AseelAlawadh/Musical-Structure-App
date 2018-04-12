@@ -21,7 +21,7 @@ public class ArtistAdapter extends ArrayAdapter<Artist> {
     public View getView(int position, View convertView, ViewGroup parent) {
         View listItemView = convertView;
         if (listItemView == null) {
-            listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
+            listItemView = LayoutInflater.from(getContext()).inflate(R.layout.artist_list_item, parent, false);
         }
 
         Artist item = getItem(position);

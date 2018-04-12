@@ -12,11 +12,12 @@ import java.util.ArrayList;
  * Created by aseelalawadh on 12/04/2018.
  */
 
-public class PodcastAdapter extends ArrayAdapter<String> {
+public class PodcastAdapter extends ArrayAdapter<Song> {
 
-    public PodcastAdapter(PodcastActivity context, ArrayList<String> episodes) {
-        super(context, 0, episodes);
+    public PodcastAdapter(PodcastActivity context, ArrayList<Song> songs) {
+        super(context, 0, songs);
     }
+
 
     public View getView(int position, View convertView, ViewGroup parent) {
         View listItemView = convertView;
@@ -25,12 +26,15 @@ public class PodcastAdapter extends ArrayAdapter<String> {
                     R.layout.list_item, parent, false);
         }
 
-        String item = getItem(position);
+        Song item = getItem(position);
+
         TextView id = listItemView.findViewById(R.id.id_textView);
         id.setText(String.valueOf(position + 1));
 
+
         TextView songName = listItemView.findViewById(R.id.title_textView);
-        songName.setText(item);
+        songName.setText(item.getName());
         return listItemView;
+
     }
 }

@@ -16,15 +16,18 @@ public class PodcastActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_podcast);
 
-        ArrayList<String> episodes = new ArrayList<>();
+        ArrayList<Song> episodes = new ArrayList<>();
         for (int i = 0; i < 100; i++) {
             int episode_number = i + 1;
-            String item = new String("Episode :" + episode_number);
+            Song item = new Song("Episode :" + episode_number, "details");
             episodes.add(item);
         }
 
         PodcastAdapter adapter = new PodcastAdapter(this, episodes);
         listView = findViewById(R.id.list_view);
         listView.setAdapter(adapter);
+
     }
+
+
 }
