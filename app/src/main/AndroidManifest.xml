@@ -18,12 +18,15 @@
         </activity>
         <activity
             android:name=".MusicActivity"
-            android:label="Artist&apos;s Songs" />
+            android:label="Artist&apos;s Songs"
+            android:parentActivityName=".ArtistActivity"/>
         <activity
             android:name=".ArtistActivity"
-            android:label="Music Artist" />
+            android:label="Music Artist"
+            android:parentActivityName=".MainActivity"/>
         <activity android:name=".PodcastActivity"
-            android:label="New York public radio"/>
+            android:label="New York public radio"
+            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>
